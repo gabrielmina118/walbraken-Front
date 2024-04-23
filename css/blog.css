@@ -1,0 +1,40 @@
+#area-principal {
+    width: 100%;
+}
+#postagem {
+    margin: 0 auto;
+    width: 80%;
+    overflow: hidden;
+}
+
+.img-postagem {
+    float: left;
+    margin-right: 20px;
+    width: 40%;
+}
+
+.postado {
+    clear: left;
+    display: block;
+}
+
+strong {
+    color: #d67400;
+}
+
+@media screen and (max-width: 768px) {
+    .img-postagem {
+        width: 100%;
+        border-radius: 10%;
+        margin-bottom: 10px;
+    }
+
+    #postagem {
+        margin: 0 auto;
+        width: 95%;
+    }
+
+    strong {
+        text-align: center;
+    }
+}

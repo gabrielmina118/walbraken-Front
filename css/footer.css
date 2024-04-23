@@ -1,0 +1,122 @@
+.main-info-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #9c9c9c;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    
+}
+.main-info-footer-logos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #fff;
+    flex-wrap: wrap;
+    min-height: 200px;
+}
+
+.main-info-footer-logos div img {
+    width: 100%;
+}
+.main-info-footer-about {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    color: #fff;
+    width: 90%;
+    justify-content: space-between;
+    height: 200px;
+    padding: 10px;
+}
+
+.main-info-footer-about h2 {
+    text-align: center;
+    color: #575454;
+}
+
+.main-info-footer-about-principal {
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-info-footer-about-principal-main p {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.main-info-footer-about-tags {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-info-footer-about-tags p {
+    color: #fff;
+}
+
+.main-info-footer-about-us {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-info-footer-about-adress {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-info-footer-about-adress p {
+    text-align: center;
+    color: #fff;
+}
+
+.main-info-footer-copy {
+    background-color: #24252a;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-info-footer-copy p {
+    color: #9b9999;
+}
+
+@media screen and (max-width: 768px) {
+    .main-info-footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .main-info-footer-about {
+        grid-template-columns: repeat(1, 1fr);
+        height: 800px;
+        gap: 2px;
+        width: 80%;
+    }
+    .main-info-footer-about-principal-main{
+        margin-top: 5px;
+        text-align: center;
+    }
+    .main-info-footer-about-tags h2{
+        margin-bottom: 5px;
+    }
+    .main-info-footer-about-us{
+        text-align: center;
+    }
+     .main-info-footer-about-us h2{
+        margin-bottom: 5px;
+    }
+}

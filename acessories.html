@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Acessórios</title>
+        <link rel="stylesheet" href="./css/acessories.css" />
+        <link rel="stylesheet" href="./css/index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+        />
+        <script src="./js/acessories.js" defer></script>
+        <script src="./js/script.js"></script>
+    </head>
+    <body>
+        <div id="header-component"></div>
+        <div class="container">
+            <!-- Filtro dos botões -->
+            <div class="filter_buttons">
+                <button
+                    id="button-acessory"
+                    onclick="showAllAcessories(this)"
+                    class="active"
+                >
+                    Mostrar todos
+                </button>
+                <button
+                    id="button-acessory"
+                    onclick="filterAcessories('teclados',this)"
+                >
+                    Teclados
+                </button>
+                <button
+                    id="button-acessory"
+                    onclick="filterAcessories('mouse',this)"
+                >
+                    Mouses
+                </button>
+                <button
+                    id="button-acessory"
+                    onclick="filterAcessories('foneDeOuvido',this)"
+                >
+                    Fones de Ouvido
+                </button>
+            </div>
+            <!-- Imagens Acessories -->
+            <div id="acessories-cards" class="filterable_cards"></div>
+        </div>
+        <div id="info-footer"></div>
+    </body>
+</html>

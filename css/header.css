@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap");
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+}
+
+.main-info {
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    padding: 5px;
+}
+nav.social-icons {
+    font-size: 31px;
+}
+.social-icons a {
+    color: #a19e9e;
+    padding: 10px;
+}
+
+.nav-bar {
+    padding: 1.5rem 6rem;
+    margin: 0px 100px;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-list ul {
+    display: flex;
+    align-items: center;
+    width: 64%;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+    transition: filter 0.3s;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #000;
+    font-weight: 400;
+    position: relative; /* NecessÃ¡rio para posicionar o pseudo-elemento */
+    transition: color 0.3s; /* Efeito de transiÃ§Ã£o da cor do texto */
+    cursor: pointer;
+}
+.nav-link:hover {
+    color: #048ABF;
+}
+
+.nav-link::after {
+    content: ""; /* O conteÃºdo do pseudo-elemento, neste caso, nada */
+    position: absolute;
+    left: 0;
+    bottom: -2px; /* Posicionamento do underscore */
+    width: 0;
+    height: 2px; /* Tamanho do underscore */
+    background-color: #048ABF; /* Cor do underscore */
+    transition: width 0.3s; /* Efeito de transiÃ§Ã£o da largura do underscore */
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Quando houver hover, o underscore se expande */
+}
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #0187a7;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 0px;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+        width: 30px;
+    }
+    .mobile-menu-icon button {
+        background-color: #24252a;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        background-color: #24252a;
+    }
+
+    .nav-link {
+        text-decoration: none;
+        font-size: 1.15rem;
+        color: #fff;
+        font-weight: 400;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+        background-color: #24252a;
+        height: 5vh;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+        background-color: #24252a;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+    .icon {
+        width: 30px;
+        color: #fff;
+    }
+
+    .main-info {
+        background-color: #24252a;
+        box-shadow: 0px 3px 10px #464646;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        padding: 10px;
+    }
+    .social-icons img {
+        width: 30px;
+        margin: 10px;
+    }
+}
